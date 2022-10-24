@@ -1,0 +1,29 @@
+<!--chamando áudio e vídeo no HTML-->
+
+<video src="./assets-example/rocket.mp4" controls>
+  <p>Este browser não suporta vídeo</p>
+  <a href="./assets-example/rocket.mp4">Baixe o vídeo aqui</a>
+</video>
+<!-- No caso de não funcionar-->
+<video controls>
+  width="500" height="400" autoplay preload="auto"
+  <!--Na função preload há os itens metadata e none-->
+  loop 
+  muted 
+  poster="./icon.png"
+  <source src="./assets-example/rocket.mp4" type="video.mp4" />
+</video>
+
+<audio controls>
+  <source src="./assets-example/viper.mp3" type="audio/mp3" />
+  <source src="./assets-example/viper.ogg" type="audio.ogg" />
+  <p>Seu navegador não suporta áudio</p>
+</audio>
+
+<iframe src="https://www.youtube.com/watch?v=aGSKrC7dGcY" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen=""
+    aria-hidden="false"
+    tab-index="0">
+</iframe>
+
